@@ -1,8 +1,2 @@
-const sqlite3 = require('sqlite3').verbose();
+var bookshelf = require("./bookshelf");
 
-let db = new sqlite3.Database('./data', err => {
-    if (err) {
-        return console.error(err.message);
-    }
-    console.log("Connected to runescape database!");
-});
